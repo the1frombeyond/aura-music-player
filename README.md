@@ -1,4 +1,5 @@
-![Uploading Screenshot 2026-05-06 132607.png…]()
+<img width="1919" height="940" alt="Screenshot 2026-05-08 110939" src="https://github.com/user-attachments/assets/53aad91a-47a4-4b90-90b2-21ecafe6bd76" />
+
 # 🎵 AURA Music Player
 
 A beautiful, modern music player built with Electron featuring an immersive CoverFlow interface, real-time audio visualization, and particle effects.
