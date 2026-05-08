@@ -1,0 +1,96 @@
+{
+  "name": "aura-music-player",
+  "version": "1.0.0",
+  "description": "AURA - A beautiful CoverFlow music player built with Electron",
+  "main": "main.js",
+  "bin": {
+    "aura-music-player": "./cli.js"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win",
+    "build:dir": "electron-builder --dir"
+  },
+  "keywords": [
+    "music",
+    "player",
+    "electron",
+    "coverflow",
+    "audio",
+    "mp3"
+  ],
+  "author": "the1frombeyond",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "jsmediatags": "^3.9.7",
+    "electron": "^28.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.the1frombeyond.auramusic",
+    "productName": "AURA Music Player",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist/**",
+      "!node_modules/**/*",
+      "!*.md",
+      "!*.log"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "assets/icon.ico",
+      "publisherName": "the1frombeyond"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "AURA Music Player",
+      "include": "installer.nsh"
+    },
+    "fileAssociations": [
+      {
+        "ext": "mp3",
+        "name": "MP3 Audio",
+        "description": "MP3 Audio File",
+        "role": "Editor"
+      },
+      {
+        "ext": "wav",
+        "name": "WAV Audio",
+        "description": "WAV Audio File",
+        "role": "Editor"
+      },
+      {
+        "ext": "flac",
+        "name": "FLAC Audio",
+        "description": "FLAC Audio File",
+        "role": "Editor"
+      },
+      {
+        "ext": "m4a",
+        "name": "M4A Audio",
+        "description": "M4A Audio File",
+        "role": "Editor"
+      },
+      {
+        "ext": "aac",
+        "name": "AAC Audio",
+        "description": "AAC Audio File",
+        "role": "Editor"
+      }
+    ]
+  }
+}
