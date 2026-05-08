@@ -1,3 +1,4 @@
+![Uploading Screenshot 2026-05-06 132607.png…]()
 # 🎵 AURA Music Player
 
 A beautiful, modern music player built with Electron featuring an immersive CoverFlow interface, real-time audio visualization, and particle effects.
